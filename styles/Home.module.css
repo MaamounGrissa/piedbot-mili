@@ -1,0 +1,199 @@
+.container {
+  width: 90%;
+  max-width: 1549px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+}
+
+.introImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  background-color: rgba(38,155,151, 0.3);
+  padding-left: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    margin-bottom: 30px;
+    transition: transform 2s ;
+    animation: translateTitle 2s linear 100ms;
+    min-width: 100%;
+    margin: 0 auto 10px;
+    color: #111;
+}
+
+.desc {
+  max-width: 60%;
+  line-height: 1.7;
+  color: #555;
+  margin: 30px 0 20px;
+  font-size: 1.1rem;
+}
+
+.introBtn {
+  max-width: 200px;
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #666;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+.introBtn:hover {
+  background-color: var(--main-color);
+  color: #EEE;
+  border: 1px solid #EEE;
+}
+
+/* SECTION 2 : SERVICES */
+
+.services {
+  margin: -100px 0 0 0;
+  padding: 0 0 60px;
+  position: relative;
+  min-height: 480px;
+}
+
+.boxsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.box {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.box:first-of-type {
+  background-color: #CCD3DB;
+}
+
+.box:nth-of-type(2) {
+  background-color: #858E99;
+}
+
+.box:nth-of-type(3) {
+  background-color: #555D66;
+}
+
+.box .icon { 
+  display: block;
+  margin: 0 auto 25px;
+  width: 80px;
+  height: 80px;
+  color: #FFF;
+}
+
+.box h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 15px;
+}
+
+.box p {
+  color: #EEE;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.aboutMili {
+  padding-bottom: 40px;
+}
+
+.aboutMili h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.aboutMili p {
+  color: #555;
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media(max-width: 768px) {
+  .intro {
+    height: 100vh;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .desc {
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .services {
+    margin: 0;
+    padding-top: 40px;
+  }
+  .boxsContainer {
+    flex-direction: column;
+    position: static;
+  }
+  .box {
+    width: 100%;
+  }
+}
