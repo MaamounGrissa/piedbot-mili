@@ -6,7 +6,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import Contact from '../components/Contact';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 
 export async function getStaticProps({locale}) {
     return {
@@ -17,7 +17,7 @@ export async function getStaticProps({locale}) {
   }
   
 function contacts(props) {
-    const { t } = useTranslation('common');
+    // const { t } = useTranslation('common');
 
     return (
         <>    
@@ -25,7 +25,7 @@ function contacts(props) {
             <video type="video/mp4" src="/images/contact.mp4" controls={false} loop={true} autoPlay={true} muted={true} ></video>
                 <div className="head-overlay">
                 <div className="container flex end" >
-                        <h2 data-aos="fade-left">{t('menu_contacts')}</h2>
+                        {/* <h2 data-aos="fade-left">{t('menu_contacts')}</h2> */}
                 </div>
                 </div>
             </div>
