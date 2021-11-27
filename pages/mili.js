@@ -1,7 +1,7 @@
 import React from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-//import { useRouter } from 'next/router';
-//import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -14,12 +14,12 @@ export async function getStaticProps({locale}) {
 }
 
 const mili = (props) => {
-    //const { locale } = useRouter();
-    //const { t } = useTranslation('common');
+    const { locale } = useRouter();
+    const { t } = useTranslation('common');
 
     return (
         <>    
-            {/* <div className="head-page">
+            <div className="head-page">
                 <Image src="/images/aca.jpg" alt="ACA" layout="fill" objectFit="cover" />
                 <div className="head-overlay">
                    <div className="container flex end" >
@@ -49,9 +49,9 @@ const mili = (props) => {
                         <li><Link href="/services/hr" ><a>{t("service6")}</a></Link></li>
                     </ul>
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }
 
-export default aca
+export default mili
