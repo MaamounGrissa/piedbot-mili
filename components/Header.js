@@ -32,7 +32,7 @@ function Header(props) {
             <div className={styles.content}>
                 <div className='container flex between'>
                     <div className={styles.logo}>
-                        <a href="/" ><img src="/images/logo.png" alt="Logo" /> </a>
+                        <Link href="/"><a><img src="/images/logo.png" alt="Logo" /> </a></Link>
                     </div>
                     <div className='right-side flex'>
                         <nav className={styles.nav}>
