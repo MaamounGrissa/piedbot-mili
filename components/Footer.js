@@ -10,7 +10,7 @@ function Footer() {
                     <Link href="/"><img src="/images/logo.png" alt="Logo" /></Link>
                 </div>
                 <div className="col3">
-                    <p>&copy; {new Date().getFullYear()} NIO VOYANCE - All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Piedbot - MILI - All Rights Reserved.</p>
                     <p>Created By <a href="https://anytime4anywhere.com" target="_blanc" rel="noreferrer noopener" > Anytime & Anywhere</a></p>
                 </div>
                 <div className="col3">

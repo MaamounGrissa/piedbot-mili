@@ -1474,3 +1474,23 @@ img[alt=Card] {
   -webkit-animation-delay: 3482ms;
           animation-delay: 3482ms;
 } */
+
+.med {
+  padding: 20px;
+  background-color: rgba(209, 223, 231, 0.45);
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: rgba(161, 181, 201, 0.2) 0px 8px 24px;
+}
+
+.med p {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.med a {
+  margin: 20px auto 0;
+}
